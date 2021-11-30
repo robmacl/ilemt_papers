@@ -1,5 +1,11 @@
 ILEMT calibration paper
 
+Datasets used for calibration paper:
+    cal_9_15_premo_cmu
+    cal_9_16_premo_rotated_dipole (linearity test)
+    cal_9_24_premo_rotated_dipole
+
+
 Note on Excel files for tables:
 
 The overall_stats*.xlsx files are generated from Matlab using
