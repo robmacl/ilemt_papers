@@ -1,0 +1,46 @@
+
+IEEE Sensors Journal
+
+
+
+
+	  	
+
+Decision Letter (Sensors-76523-2024)
+
+From:
+	
+
+salvorossi@ieee.org
+
+To:
+	
+
+robmacl@cmu.edu
+
+CC:
+	
+
+salvorossi@ieee.org, pierluigi.salvorossi@ntnu.no
+
+Subject:
+	
+
+Sensors-76523-2024 revision due in 3 weeks
+
+Body:
+	
+
+27-Nov-2024
+
+Paper:Sensors-76523-2024 Calibration and characterization of
+electromagnetic position and orientation
+trackers
+
+Reviewer: 1
+
+1. Please replace the term “uncertainty “with “standard uncertainty” according to GUM -Guide to the expression of uncertainty in measurement
+==> we have replaced "uncertainty" with "standard uncertainty", "combined standard uncertainty", as appropriate. Minor rewording of expanded standard uncertainty to clarify.
+
+2. The meaning of value listed in table II are not clear. Table label is “uncert is the measurement uncertainty including stage error: RMS error augmented according to eqn (10)” but RMS is smaller than uncert. I should be preferable to use in the Table the same symbols of (10)
+==> we have changed column labels to match (10) and altered the caption to match.

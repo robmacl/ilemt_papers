@@ -1,0 +1,136 @@
+
+IEEE Sensors Journal
+
+
+
+
+	  	
+
+Decision Letter (Sensors-76523-2024)
+
+From:
+	
+
+salvorossi@ieee.org
+
+To:
+	
+
+robmacl@cmu.edu
+
+CC:
+	
+
+salvorossi@ieee.org, pierluigi.salvorossi@ntnu.no
+
+Subject:
+	
+
+Sensors-76523-2024 revision due in 3 weeks
+
+Body:
+	
+
+27-Nov-2024
+
+Paper:Sensors-76523-2024 Calibration and characterization of
+electromagnetic position and orientation
+trackers
+
+Dear Mr. MacLachlan,
+
+I am writing to you concerning the above referenced manuscript, which you submitted to the IEEE Sensors Journal.
+
+Based on the enclosed set of reviews at the bottom of this letter, your manuscript has received an "Accept, Subject to Mandatory Corrections" decision.  We hope you will be able to implement the comments of the reviewers.
+
+** EFFECTIVE IMMEDIATELY **
+
+All revised papers must have the changes highlighted or underlined so they are easy to see.  All revisions should also include a point-by-point response to each of the reviewer's comments.  This will help to speed up the final decision process for the editor.
+
+<strong>PLEASE READ:</strong><ul><li>If you originally submitted via the IEEE Author Portal, please upload your files here: https://ieee.atyponrex.com/journal/sensors</li><li>If you originally submitted via ScholarOne Manuscripts, please upload your files here: https://mc.manuscriptcentral.com/sensors</li></ul>
+The deadline for your revision is 18-Dec-2024.  If this is not enough time, please request an extension by emailing sensors-admin@ieee.org so that we will know when to expect your revision.  However, we recommend that you revise your current manuscript and return it within the time period specified.  In this case, the revision will go to the same Associate Editor and reviewers for re-evaluation.
+
+If you have any questions regarding the reviews, please contact the Associate Editor. Any other support related inquiries should be directed to Shivani Chauhan at sensors-admin@ieee.org.
+
+Sincerely,
+
+Prof. Pierluigi Salvo Rossi  
+salvorossi@ieee.org, pierluigi.salvorossi@ntnu.no  
+
+Shivani Chauhan
+sensors-admin@ieee.org
+
+Editor Comments:
+
+Reviewer: 1
+
+Comments to the Author
+In this resubmission, the authors have addressed the key comments related to the previous version of the manuscript
+Minor remarks should be addressed to improve the manuscript.
+
+1. Please replace the term “uncertainty “with “standard uncertainty” according to GUM -Guide to the expression of uncertainty in measurement
+2. The meaning of value listed in table II are not clear. Table label is “uncert is the measurement uncertainty including stage error: RMS error augmented according to eqn (10)” but RMS is smaller than uncert. I should be preferable to use in the Table the same symbols of (10)          
+
+Reviewer Comments:
+
+Reviewer: 1
+
+Recommendation: Publish in Minor, Required Changes (as noted in the Comments section. This rating may not be assigned for Sensors Letters.)
+
+Comments:
+In this resubmission, the authors have addressed the key comments related to the previous version of the manuscript
+Minor remarks should be addressed to improve the manuscript.
+
+1. Please replace the term “uncertainty “with “standard uncertainty” according to GUM -Guide to the expression of uncertainty in measurement
+2. The meaning of value listed in table II are not clear. Table label is “uncert is the measurement uncertainty including stage error: RMS error augmented according to eqn (10)” but RMS is smaller than uncert. I should be preferable to use in the Table the same symbols of (10)
+
+
+Additional Questions:
+1. Is the paper technically sound? If no, why not?: Yes
+
+2. Is the coverage of the topic sufficiently comprehensive and balanced?: Yes
+
+3. How would you describe the technical depth of the paper?: Appropriate for the generally knowledgeable individual Working in the Field or a Related Field
+
+4. How would you rate the technical novelty of the paper?: Somewhat novel
+
+1. Is the topic appropriate for publication in these transactions?: Yes
+
+2. Is the topic important to colleagues working in the field?: Moderately
+
+1. How would you rate the overall organization of the paper?: Satisfactory
+
+2. Are the title and abstract satisfactory?: Yes
+
+title and abstract explanation:
+
+3. Is the length of the paper appropriate? If not, recommend how the length of the paper should be amended, including a possible target length for the final manuscript.: Yes
+
+length of the paper recommendation:
+
+4. Are symbols, terms, and concepts adequately defined?: Not always
+
+5. How do you rate the English usage?: Satisfactory
+
+6. Rate the Bibliography?: Satisfactory
+
+1. How would you rate the technical contents of the paper?: good
+
+2. How would you rate the novelty of the paper?: sufficiently novel
+
+3. How would you rate the "literary" presentation of the paper?: mostly accessible
+
+4. How would you rate the appropriateness of this paper for publication in this IEEE Transactions?: good match
+
+If you are suggesting additional references they must be entered in the text box provided. All suggestions must include full bibliographic information plus a DOI. <strong>Please note: requiring primarily one’s own papers to be cited is considered to be citation coercion, an ethically questionable practice according to IEEE Publication Services and Products Board Operations Manual. It also violates the reviewer’s anonymity. </strong>: no suggested references
+
+Would you recommend this paper for a Best Paper Award?: No
+
+Date Sent:
+	
+
+27-Nov-2024
+ 
+
+ 
+© Clarivate  |  © ScholarOne, Inc., 2025. All Rights Reserved.  |  Accessibility
