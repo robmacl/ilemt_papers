@@ -1,9 +1,0 @@
-
-Sample variables: (metals, hollow/solid/sheet, high/low) (X, Y, theta)
-
-Doesn't make sense to present all the plots, just too much detail.
-
-or
-
-
-
