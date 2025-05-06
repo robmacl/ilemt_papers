@@ -1,0 +1,49 @@
+Line 55: you changed "than" to "that". This is not at all what is meant. The situation is that we calibrate with one set of degrees of freedom, and then we test with another set of degrees of freedom. How about:
+    "One important result is a quantification of how accuracy is affected when the degrees of freedom differ between calibration and testing."
+
+Line 77: "(6-DOF)" got garbled. There is an extra close paren, this has been matched as a reference to equation 6???
+
+Line 224: no comma should be between "transform which". A comma here is completely non-idiomatic in math usage. As I recall, this is a restrictive clause.
+
+Line 359, 360: J and F are plural, there are multiple J and F transforms in equation (6). Even if treating J and F as collective symbols, they represent sets/collections of transforms, which also requires plural verb agreement "F is constants" is grammatically incorrect. Please retain the original text:
+    "The J are known, and are varied during the calibration data collection, while the F are constants that are initially only imprecisely known."
+
+Lines  119, 133, 327, 334, 349, 397, 400, 403, 404, 410, 437, 438, 442, 453, 459, 475, 476, 479, 482, 491, 492, 494, 495, 496, 499, 500, 511, 630
+Equations (1), (8), (9), (10) 
+Can we fix all of superscript diacritic tildes (~) to be bigger? These are extremely indistict in comparison to the original PDF from MS word. Perhaps a bold or \widetilde? For all I can see it could be an overbar or caret or even a dot. This tilde is just very flat. It is most disproprtionate over the capitals like "P", but even over "c" it is hard to make out.
+
+Line 281: This is an error in the original: the diacritic on "c" should be tilde "~", not a caret "^"
+
+AQ:1 According to the IEEE author web site Ralph L. Hollis is a fellow.
+https://ieeexplore.ieee.org/author/37277029900
+His membership number is 01260231
+
+AQ:2 Will upload the graphical abstract again.
+
+AQ:3, AQ:4 checked
+
+AQ:5 approved
+
+AQ:6, AQ:8 Thanks for catching all the inconsistent italics.
+- Superscript T for array transpose such as lines 236, 379-386 should be changed to be roman, not italic. This is the standard convention.
+- Figure 2, page 4: all of the left and right superscripts of "so", "se", "st" should also be roman. I had them all as italic, but this isn't correct since it is an index rather than a variable. It looks like you got these fixed in the main text, but they also appear in fig 2.
+- On line 302: "so" and "se" should also be changed to roman
+- On line 307: an ending "}" got lost.
+- On lines 258, 264, 362-364, 704: all of the x y z subscripts here and anywhere else should be consistenly roman
+- Lines 612, 623, 635, 646, 703: all of the uppercase "X", "Y", "XYZ", etc., should be changed to roman.
+
+AQ:7 If you are referring to line 244, I see this as a forward cross reference. The actual discussion of those figures is later and in-sequence, and especially for figure 3 it would make no sense to move it here. This could be rephrased to perhaps provide a clue that the figures are later on, like say "(see figures 2 and 3 below)".
+
+AQ:9 This is actually a PhD thesis, and has no number. The correct citation is:
+ "O'Donoghue, K. 2014. Electromagnetic tracking and steering for catheter navigation. PhD Thesis, University College Cork."
+ See https://cora.ucc.ie/items/0f209cb5-e977-444e-ab32-fbd8b176d248
+
+AQ:10 It is published by SPIE, Bellingham, Washington, USA
+
+AQ:11 check
+
+AQ:12 Claudia Pelle received her Masters in 2015, Ralph L. Hollis received his PhD in 1975.
+
+AQ:13 Raplh L. Hollis doesn't have a better photo. You can omit the photo if it is unacceptable.
+
+AQ:14 the Thomas J. Watson Research Center is located in Yorktown Heights, New York, USA

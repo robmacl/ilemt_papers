@@ -1,0 +1,33 @@
+Thank you for your work fixing my inconsistent italics in math notation. The "~" accents also look good now.
+
+
+There is something really weird with the visual abstract. Maybe it is supposed to be on a solid green background? But instead there are these white shapes. Also it looks pretty bad with the white background text boxes since they clip into the other graphic elements. Can you change those to have the green background or just display the entire GA image on a white background?
+
+I don't see any direct mention of the supplement or link to it in the main text. That is, there are cross reference in the text to sections there, but nothing that says "hey there's a supplement here". This would be useful to someone reading the PDF to remind them to look online or something. Ideally it would link to the supplement. Is this going to appear in some way? I had supposed that there would be some sort of text box with the caption I supplied.
+
+Line 86: I think it would be good to put a thin space between n_so and n_se, IMO it's hard to tell whether the "so" belongs to the first or second "n". This ambiguity becomes more serious later on when there are left superscripts (see below).
+
+Line 333: you really need to do something with these left superscripts on L and M when they are adjacent to another variable (in this case P with no superscript).  In the proof the left superscript is closer to the italic preceding variable and looks like a right superscript on it. Easiest solution here (and elsewhere) is to add extra space before a left superscript so that the left superscript is clearly closer to the variable that it actually belongs to. 
+
+Line 359: same problem with left superscripts. Here all of the superscripts on the right side of the equation (6) are *left* superscripts. Put space after each F and J to make the association clear.
+
+Line 388: Please restore this sentence to:
+    "These constraints cause the fixture transforms to absorb any
+    pose offset between the Z coil and the fixture"
+
+The fixture doesn't absorb anything, it's a piece of plastic.
+
+Line 429: Please restore the original wording to this sentence:
+    "During calibration we must determine the F which minimizes
+    the mismatch between every calibration point"
+
+F is not any old F, it's the F which mimizes error. This is what mathematicians say. No you don't say "determine F which minimizes error" or "determine F, which minimizes error".
+
+Line 551: The set {0..3} meaning {0, 1, 2, 3} is not formatted correctly. It is written {0.3} which looks like a decimal.
+
+Line 565: I think AC should be uppercase, it's a standard acronym, Alternating Current.
+
+Fig. 9: My error, but I just noticed the Y axis labels on (a) and (b) are swapped. 9(a) should be "Error (mm)" and 9(b) should be "Error (degrees)"
+
+
+
