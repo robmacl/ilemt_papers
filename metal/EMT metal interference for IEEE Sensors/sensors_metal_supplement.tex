@@ -51,7 +51,7 @@ The weights of all metal samples are shown in Table \ref{mat_size}. The rod and 
 
 \section{Tracker configuration}
 \label{supplement:tracker_configuration}
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width= 7in]{chaicS1.png}}
 \caption{The configuration of source and sensor position of two trackers is relative to the global origin: (a) ILEMT and (b) 3D Guidance trakSTAR. The two components (source and sensor) are approximately 23 cm apart along the y-axis. There is a small discrepancy between two trackers due to the larger dimension of trakSTAR transmitter than ILEMT source. The global origin is located at the middle with three axes direction.}
 \label{configuration}
@@ -112,12 +112,13 @@ Fig.\ref{coupling_sheet_fit} shows the power law fits for sheet metal. After a g
 
 \section{Nixon model agreement}
 \label{supplement:Nixon_ratio}
-As shown in Fig. \ref{Nixon_ratio}, the ratio of the measured error to $d_{se}^{-3}d_{so}^{-3}$ does not remain constant, so the fit to the Nixon model\cite{nixon_effects_1998} is poor until $x>25$\,cm, at which point there is very little error in any case. For sheets, after the geometric correction above (\S\ref{supplement:sheet_fitting}), agreement with the Nixon model is good.
 
-\begin{figure}[!htbp]
+\begin{figure}[H]
 \centerline{\includegraphics[width=3.5in]{chaicS5.png}}
 \caption{Ratio of translation error to ${d_{se}^{-3} d_{so}^{-3}}$ with (a) normalized at x = 12 cm for tube LC steel and (b) normalized at x = 40 cm for sheet metal.}
 \label{Nixon_ratio}
 \end{figure} 
+
+As shown in Fig. \ref{Nixon_ratio}, the ratio of the measured error to $d_{se}^{-3}d_{so}^{-3}$ does not remain constant, so the fit to the Nixon model\cite{nixon_effects_1998} is poor until $x>25$\,cm, at which point there is very little error in any case. For sheets, after the geometric correction above (\S\ref{supplement:sheet_fitting}), agreement with the Nixon model is good.
 
 \end{document}

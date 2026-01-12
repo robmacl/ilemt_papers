@@ -16,6 +16,7 @@
 \usepackage{xr}
 \usepackage{afterpage}
 \externaldocument{sensors_metal_supplement}
+\usepackage{needspace}
 
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
@@ -37,8 +38,12 @@
 \IEEEtitleabstractindextext{%
 \fcolorbox{abstractbg}{abstractbg}{%
 \begin{minipage}{\textwidth}%
+\begin{wrapfigure}[17]{r}{3in}%
+\includegraphics[width=3in]{gagraphic.png}%
+\end{wrapfigure}%
 \begin{abstract}
-Metallic interference is a major limitation in electromagnetic trackers (EMTs). We systematically examined interference across multiple variables using the In-Loop Electromagnetic Tracker (ILEMT) with dual-frequency capability (300\,Hz and 10\,kHz) and compared results with pulsed DC modulation. We tested six metals in rod, tube, and sheet forms at multiple positions and orientations. These metals were both ferromagnetic and non-ferromagnetic, with varying electrical conductivities. Interference was very similar between the pulse and 300\,Hz modulations, with the benefit or harm of these low frequency modulations varying from a 260$\times$ decrease in interference to a 5.5$\times$ increase. It was often true that interference for ferromagnetic metals increased at low frequency while non-ferromagnetic metals showed a decrease, but the strength of this effect varied widely with shape and orientation, nearly disappearing or even reversing with large sheets. To build intuition about metal interference processes we include a substantial overview of the relevant physics. The relationship between magnetic field deviation and tracking error is nonlinear, with pose solution algorithms creating complex error patterns not predicted by field change alone. Metal interference decreased with distance following an inverse power law with exponents ranging from -3 to -6, with ferromagnetic materials and sheet samples near the theoretical -6 exponent predicted by dipole models, while non-ferromagnetic rod and tube samples showed significantly lower exponents. Shape and orientation significantly affected interference, with 90$^{\circ}$ rotations generally reducing the error. These findings provide practical guidance for EMT users in minimizing interference and offer EMT developers insights into the limitations of simple interference models, highlighting the potential of dual-frequency approaches for adaptive interference compensation.
+
+Metallic interference is a major limitation in electromagnetic trackers (EMTs). We systematically examined this problem using our In-Loop Electromagnetic Tracker (ILEMT) with dual-frequency capability (300\,Hz and 10\,kHz) and compared results with pulsed DC modulation. We tested six metals in rod, tube, and sheet forms across multiple positions and orientations, including both ferromagnetic and non-ferromagnetic materials with varying conductivities. Interference was very similar between pulse and 300\,Hz modulations, with the benefit or harm of these low frequency modulations varying from a 260$\times$ decrease in interference to a 5.5$\times$ increase It was often true that interference for ferromagnetic metals increased at low frequency while non-ferromagnetic metals showed a decrease, but the strength of this effect varied widely with shape and orientation, nearly disappearing or even reversing with large sheets.  The relationship between field deviation and tracking error is nonlinear, with pose solution algorithms creating complex error patterns. Interference decreased with distance following inverse power laws with exponents from -3 to -6, with ferromagnetic materials and sheet samples closer to the theoretical -6 exponent predicted by dipole models, while non-ferromagnetic rod and tube samples showed significantly lower exponents. Shape and orientation significantly affected interference, with 90$^{\circ}$ rotations generally reducing error. These findings provide practical guidance for EMT users in minimizing interference and offer EMT developers insights into the limitations of simple interference models, highlighting the potential of dual-frequency approaches for adaptive interference compensation.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -263,12 +268,6 @@ $1.00$& $5.96\times10^7$&$3.76\times10^{-3}$&$6.52\times10^{-4}$ \\
 \end{tabular}
 \end{table}
 
-\begin{figure}[!htbp]
-\centerline{\includegraphics[width=\columnwidth]{chaic4.png}}
-\caption{Metal samples are in three shapes and six metal types. The rods and tubes are both 100 mm long and both contain the same amount of metal. Insets show the end views of the rod and tube shapes.}
-\label{Sample}
-\end{figure}
-
 We tested three metal shapes (Fig. \ref{Sample}):\\
 \textbf{rod:}
 7.9 mm diameter and 100 mm length, chosen to resemble the shape and metal content of a handheld surgical instrument.\\
@@ -277,10 +276,16 @@ the same length and metal volume as the rods but with an outer diameter of 12.7 
 \textbf{sheet:}
 305 mm square with 1.3 mm thickness (matching the tube wall thickness.) Sheets were intended to represent the effect of large metal objects more distant from the workspace, such as a metal table-top. (Ti and 416 SS not tested.)
 
+\begin{figure}[!htbp]
+\centerline{\includegraphics[width=\columnwidth]{chaic4.png}}
+\caption{Metal samples are in three shapes and six metal types. The rods and tubes are both 100 mm long and both contain the same amount of metal. Insets show the end views of the rod and tube shapes.}
+\label{Sample}
+\end{figure}
+
 
 \subsection{Metal Position and Rotation}
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic5.png}}
 \caption{Experiment configuration showing the source and sensor locations and examples of metal positioned at $(20, 0)$. The metal $x$ position is measured from the nearest part, $y$ from the center. Angle is normal to the metal long axis, with (a) $0^{\circ}$ and (b) $90^{\circ}$.}
 \label{location_example}
@@ -295,7 +300,7 @@ We tested three modulations (Low AC, High AC, and Pulse) using the two trackers 
 
 \section{Results and Discussion}
 
-\begin{table*}[!htbp]
+\begin{table*}[!b]
 \caption{Experimental Variables, Summary of Hypotheses and Results}
 \label{hypothesis}
 \setlength{\tabcolsep}{3pt}
@@ -356,7 +361,7 @@ $\bullet$ Large interaction with metal type and modulation for sheet shapes\\
 \end{tabular}
 \end{table*}
 
-\begin{figure*}[!b]
+\begin{figure*}[!htbp]
 \centerline{\includegraphics[width=\textwidth]{chaic6.png}}
 \caption{Change in error caused by a metal tube as it is moved along the $x$ axis (normal to and away from from the source-sensor axis, Fig. \ref{location_example}). The curve shape of translation error (a) and rotation error (b) are nearly identical, as are the curve shapes across the metals. But this shape does not obey the Eqn. \eqref{eq:combined_error} prediction of monotonic decrease in error. The ILEMT detection limit is below $5 \times 10^{-6}$ m. (Modulation: High AC, Rotation: $0^\circ$)}
 \label{hollow_high_xmoving}
@@ -380,7 +385,7 @@ The rotation and translation error curves are extremely similar, which is unsurp
 Although notches appear in the Fig. \ref{hollow_high_xmoving} translation and rotation error plots, in Fig. \ref{xmoving_coupling}, the coupling magnitude error (\S\ref{subsec:coupling}) forms a continuous curve, more closely corresponding to the physically expected field change from models such as \eqref{eq:combined_error}. Given the complexity of the pose solution, which maps the 9-DOF coupling to the 6-DOF pose by inverting a nonlinear magnetic model, the Nixon model's assumption (\S\ref{nixon_model}) that pose error is proportional to magnetic field change is a very rough approximation. As will be discussed in \S\ref{sec:Power Law}, in the far distance both pose error and coupling magnitude error show the same power law drop-off, but by then the error is in any case quite small, and likely below the detection limit for most EMTs, having lower resolution that ILEMT.
 
 
-\begin{figure}[!tb]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic8.png}}
 \caption{Translation error as a rod sample is moved in $y$ at $x = 20$ cm. We see expected peaks when metal is nearest the source and sensor, but in a dramatic interaction with metal type and modulation, there are three quite different curves. The non-ferromagnetic samples are undetectable by Low AC modulation at $x=20$ cm, and are not shown.
 (Modulations: High and Low AC, Rotation: $0^\circ$)}
@@ -388,7 +393,9 @@ Although notches appear in the Fig. \ref{hollow_high_xmoving} translation and ro
 \end{figure}
 
 \subsubsection{Y motion}
- Fig. \ref{ymoving_transrot} shows translation error as a rod sample is moved parallel to the $y$ axis at $x = 20$ cm. This motion parallels the source-sensor axis (see Fig. \ref{location_example}). We do see that error peaks when the metal is nearest to the source and sensor, which is widely reported \cite { nixon_effects_1998, milne_accuracy_1996}, and predicted by the Nixon model (\S\ref{nixon_model}), but the curves vary greatly due to interactions with metal type and modulation.
+ Fig. \ref{ymoving_transrot} shows translation error as a rod sample is moved parallel to the $y$ axis at $x = 20$ cm. This motion parallels the source-sensor axis (see Fig. \ref{location_example}). We do see that error peaks when the metal is nearest to the source and sensor, which is widely reported \cite {nixon_effects_1998, milne_accuracy_1996}, and predicted by the Nixon model (\S\ref{nixon_model}), but the curves vary greatly due to interactions with metal type and modulation.
+
+\needspace{3\baselineskip}
  
 \subsection{Effect of Metal Type}
 Returning to Figs. \ref{hollow_high_xmoving}, \ref{xmoving_coupling}, in this condition (Shape: Tube, Modulation: High AC, Rotation: $0^\circ$), we can clearly distinguish the three groups of metals. In order of decreasing interference are ferromagnetic metals, then non-ferromagnetic metals having high and low conductivity (see \S\ref{subsec:metal_types}). Non-ferromagnetic metals interfere only via eddy currents, and lower conductivity \textit{usually} reduces eddy currents (see \S\ref{subsubsec:eddy_current_model}), so we expect to see the low conductivity non-ferromagnetic metals at the bottom. Higher interference from 416 SS vs. LC steel can be explained by the significant difference in permeability (see Table \ref{material_prop}.) It is common to see ferromagnetic metals as causing the greatest interference, but we do not observe this in some other conditions below, due to interactions with shape and rotation. 
@@ -402,14 +409,14 @@ Due to the frequency dependence of the eddy current and permeability metal inter
 \subsubsection{AC Modulation}
 Fig. \ref{frequency_tube} shows the drop-off of interference during $x$ motion for both the High AC and Low AC modulation. The changes in interference between modulations are largely as expected. At a reduced frequency, the ferromagnetic metal interference increases due to increased permeability, while interference for the other metals decreases due to reduced eddy currents. But note how at High AC the high conductivity metals Cu and 6061 Al show identical interference despite their different conductivity (Table \ref{material_prop}) because the eddy currents are inductance limited (Fig. \ref{eddy_current_freq_response}), while the lower conductivity 6061 Al shows a distinctly lower interference at Low AC. For the high conductivity Cu the interference reduction is also relatively modest (see Table \ref{tab:distortion_ratios}.)
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic9.png}}
 \caption{Translation error of tube samples during $x$ motion, comparing High AC and Low AC modulations. At a reduced frequency, the ferromagnetic metal interference increases due to increased permeability, while interference for the other metals decreases due to reduced eddy currents. The low-conductivity Ti and 304 SS are nearly undetectable using Low AC modulation, and are not shown. 
 (Modulations: High and Low AC, Shape: Tube, Rotation: $0^\circ$)}
 \label{frequency_tube}
 \end{figure}
 
-\begin{figure}[!tb]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic10.png}}
 \caption{Scatter plot of translation error, comparing High AC and Low AC modulations. Samples above the line have greater interference at Low AC (ferromagnetic metals) while samples below the line (non-ferromagnetic) have reduced interference. The low conductivity Ti and 304 SS are near the detection limit at Low AC. The effect of rod vs. tube shape is material dependent.
 (Modulations: High and Low AC, Shapes: Tube and Rod, Position: (10, 0), Rotation: $0^\circ$)}
@@ -436,7 +443,7 @@ As predicted, the similar modulation frequencies of Pulse and Low AC modulation 
 \subsection{Effect of Metal Shape} 
 \label{sec:metal_shape}
 \subsubsection{Rod vs. Tube}
-\begin{figure}[tb]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic12.png}}
 \caption{Translation error response to $x$ motion comparing rod and tube samples using High and Low AC modulations. For the ferromagnetic LC Steel the interference difference was small at High AC, disappearing at Low AC. With 304 SS at Low AC, the tube does create lower interference, dropping to the detection limit. For 6061 Al, the tube interference is larger at both modulations.
 (Shapes: Tube and Rod, Modulations: High and Low AC, Rotation: $0^\circ$)}
@@ -447,7 +454,7 @@ From Fig. \ref{small_shape}, and returning to Fig. \ref{HighLow_compare}, we see
 
 Given the rod diameter of $7.9$ mm and tube wall thickness $1.3$ mm, we had thought we might see this reversal of tube and rod response for more materials (see \S\ref{subsec:metal_types}). For example, the skin depth for 6061 Al at 300\,Hz is $4.73\times10^{-3}$, exceeding the tube wall thickness $>3\times$. Yet the tube still creates much more interference than the rod.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic13.png}}
 \caption{Response to $x$ motion for sheet samples and both High and Low AC modulations. Note that this motion started at $x = 20$ cm. The drop-off is remarkably uniform with very little difference between metals at High AC, while ferromagnetic LC Steel shows \textit{lower} interference at Low AC, contrary to its behavior with other shapes.
 (Shape: Sheet, Modulations: High and Low AC, Rotation: $0^\circ$)}
@@ -475,7 +482,7 @@ Fig. \ref{90deg_high_tube} compares the response to $x$ motion when tube samples
 \subsubsection{Sheets}
 Fig. \ref{sheet_90deg} shows the response to $x$ motion of sheets with $90^\circ$ rotation. Compare to Fig. \ref{sheet_0deg}, where we saw unexpected interactions with the metal type. Here the effect of metal is more similar to the hypothesized effects of conductivity and permeability (\S\ref{subsec:interference_mechanisms}), which we confirmed for the rod and tube shapes. As we saw with rod and tube rotation, the interference is lower at $90^\circ$. Here also, rotation moves the center of mass away from the source-sensor axis, now by $15$ cm. However, with sheets the reduction at $90^\circ$ is considerably larger than for rods and tubes, $\approx 25\times$. There are also significant differences in the interaction between metal type and modulation, such as the high/low ratio. These will be examined in more detail later in the Table \ref{Compare_HighLow_3DGuidance} discussion.
 
-\begin{figure}[H]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic15.png}}
 \caption{Translation error response to $x$ motion of sheet samples, $90^\circ$ rotation. Comparing to Fig. \ref{sheet_0deg} at $0^\circ$, the error is greatly reduced at $90^\circ$ and the interaction with metal type is more similar to what we have seen with rod and tube samples elsewhere.
 (Rotation: $90^\circ$, Shape: Sheet, Modulations: High and Low AC)
@@ -488,7 +495,7 @@ Why is the behavior so peculiar for sheets at $0^\circ$ orientation? Referring b
 
 \subsection{Power Law Fitting of Drop-off Behavior} \label{sec:Power Law}
 
-\begin{figure}[tb]
+\begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic16.png}}
 \caption{Power law fit of coupling error magnitude response to $x$ motion. The data for each sample is normalized so that the curve fit passes through (20, 1). There are two distinct response shapes for ferromagnetic and non-ferromagnetic metals, which is now much clearer than in the non-normalized Fig. \ref{xmoving_coupling}. For the ferromagnetic metals, the exponent magnitude is larger (steeper drop-off). 
 (Shapes: Tube, Modulation: High AC, Rotation $0^\circ$)}
@@ -497,7 +504,7 @@ Why is the behavior so peculiar for sheets at $0^\circ$ orientation? Referring b
 
 Beginning with Fig. \ref{hollow_high_xmoving} we observed that during $x$ motion the curve shapes were similar between metals even when the interference strength varied considerably at any given distance. There was also some difference in shape between the ferromagnetic and non-ferromagnetic metals. From theory \S\ref{nixon_model} we expect an $x^{-6}$ drop-off of interference with distance \eqref{eq:dropoff_power}, at least at far distance, so we have fitted our results to a power law response, Fig. \ref{coupling_fit}. These plots are normalized to equal error at $x=20$. The curves clearly now fall into ferromagnetic and non-ferromagnetic groups.
 
-\begin{table}[!b]
+\begin{table}[!htbp]
 \caption{Curve Fit Exponents (Modulation: High AC, Rotation: 0$^\circ$)}
 \label{exponent}
 \setlength{\tabcolsep}{3pt}
