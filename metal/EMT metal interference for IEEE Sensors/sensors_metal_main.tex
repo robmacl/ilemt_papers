@@ -65,7 +65,7 @@ In this study, we systematically examine metallic interference in electromagneti
 
 \section{Related Work}
 
-Higher conductivity generally leads to greater interference across different metal materials, though steel samples showed opposite results due to combined effects of permeability and eddy current \cite{stevens_minimizing_2010, lascalza_effect_2003}. Measurements with pulsed DC trackers found that steel samples produced greater error than aluminum at sampling rates between 20-140\,Hz, though aluminum caused more distortion at the highest sampling rate of 140\,Hz, as higher sampling rates provide less time for eddy current decay \cite{lascalza_effect_2003}. This confirms that eddy current distortion affects both ferromagnetic and non-ferromagnetic metals, specifically identified as out-of-phase distortion when developing mathematical models for interference correction \cite{cavaliere_enhancing_2023}.
+Higher conductivity generally leads to greater interference across different metal materials, though steel samples showed opposite results due to combined effects of permeability and eddy current \cite{stevens_minimizing_2010, lascalza_effect_2003}. Measurements with pulsed DC trackers found that steel samples produced greater error than aluminum at sampling rates between 20-140\,Hz, though aluminum caused more distortion at the highest sampling rate of 140\,Hz, as higher sampling rates provide less time for eddy current decay \cite{lascalza_effect_2003}. This confirms that eddy current distortion affects both ferromagnetic and non-ferromagnetic metals \cite{cavaliere_enhancing_2023}.
 
 Beyond material properties, studies in orthopedic tracking applications revealed that larger size and mass significantly increase distortion, while greater distance between metals and tracker components reduces interference \cite{stevens_minimizing_2010}. 
 
@@ -229,7 +229,7 @@ Low carbon steel (LC steel), 416 stainless steel (416 SS)
 \end{itemize}
 
 Table \ref{material_prop} summarizes the permeability, conductivity and skin depths of these materials\cite{bowler_frequency-dependence_2006,callister_notitle_2019,mitchell_notitle_2010}.
-Note that while the metal types are nominally the same across the shapes, the materials will not be entirely identical. More important than any small differences in composition, different processing can have significant effects. All three shapes were likely cold worked, and then $\mu_r$ can reach $5$ or more for 304 SS.
+Note that while the metal types are nominally the same across the shapes, the materials will not be entirely identical. More important than any small differences in composition, different processing can have significant effects. All three shapes were likely cold worked, which for 304 SS can increase $\mu_r$ to $5$ or more for.
 
 \begin{table}[!htbp]
 \caption{Relative Permeability, Conductivity, and Skin Effect at 300\,Hz and 10\,kHz  Properties for Metal Samples}
@@ -382,8 +382,8 @@ The rotation and translation error curves are extremely similar, which is unsurp
 \label{xmoving_coupling}
 \end{figure}
 
-Although notches appear in the Fig. \ref{hollow_high_xmoving} translation and rotation error plots, in Fig. \ref{xmoving_coupling}, the coupling magnitude error (\S\ref{subsec:coupling}) forms a continuous curve, more closely corresponding to the physically expected field change from models such as \eqref{eq:combined_error}. Given the complexity of the pose solution, which maps the 9-DOF coupling to the 6-DOF pose by inverting a nonlinear magnetic model, the Nixon model's assumption (\S\ref{nixon_model}) that pose error is proportional to magnetic field change is a very rough approximation. As will be discussed in \S\ref{sec:Power Law}, in the far distance both pose error and coupling magnitude error show the same power law drop-off, but by then the error is in any case quite small, and likely below the detection limit for most EMTs, having lower resolution that ILEMT.
-
+Although notches appear in the Fig. \ref{hollow_high_xmoving} translation and rotation error plots, in Fig. \ref{xmoving_coupling}, the coupling magnitude error (\S\ref{subsec:coupling}) forms a continuous curve, more closely corresponding to the physically expected field change from models such as \eqref{eq:combined_error}. Given the complexity of the pose solution, which maps the 9-DOF coupling to the 6-DOF pose by inverting a nonlinear magnetic model, the Nixon model's assumption (\S\ref{nixon_model}) that pose error is proportional to magnetic field change is a very rough approximation. As will be discussed in \S\ref{sec:Power Law}, in the far distance both pose error and coupling magnitude error show the same power law drop-off, but by then the error is in any case quite small, and likely below the detection limit for most EMTs, which have lower resolution than ILEMT.
+ 
 
 \begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic8.png}}
@@ -637,7 +637,7 @@ Table \ref{tab:distortion_ratios} shows the high/low field distortion ratios pre
 Interference generally decreases in this order: ferromagnetic metals, high-conductivity non-ferromagnetic metals, and low-conductivity non-ferromagnetic metals, however this varies with metal shape and orientation, with sheets at $0^\circ$ rotation being a strong exception. Ferromagnetic materials experience both eddy current and permeability distortions, but the permeability effect typically dominates. Eddy current strength correlates with conductivity for non-ferromagnetic metals, but (especially with High AC modulation) the difference between Cu and 6061 Al can largely disappear. 
 
 \textbf{Effect of Metal Shape and Size.}
-Compared to rods and tubes, the large sheets create much more interference, but Table \ref{Compare_HighLow_3DGuidance} obscures this because the sheets are placed at a longer distance, see \S\ref{subsubsec:sheets_effect}. Surprisingly, even when skin depth significantly exceeds tube wall thickness, the tube typically generates more interference than the solid rod of the same metal volume. Sheet samples show complex behavior that varies with orientation and material type, deviating from expected patterns due effects not captured by simple models, e.g. both conductivity \textit{and} permeability have minimal effect for sheets at $0^\circ$. 
+Compared to rods and tubes, the large sheets create much more interference, but Table \ref{Compare_HighLow_3DGuidance} obscures this because the sheets are placed at a longer distance, see \S\ref{subsubsec:sheets_effect}. Surprisingly, even when skin depth significantly exceeds tube wall thickness, the tube typically generates more interference than the solid rod of the same metal volume. Sheet samples show complex behavior that varies with orientation and material type, deviating from expected patterns due to effects not captured by simple models, e.g. both conductivity \textit{and} permeability have minimal effect for sheets at $0^\circ$. 
 
 \textbf{Effect of Metal Rotation.}
 Samples oriented at $90^{\circ}$ generally show lower interference due to changes in both demagnetization and current loop patterns. The interaction between rotation, shape, and metal type create unexpected behavior, particularly with sheet samples, where rotation has a large $\approx 25\times$ effect and also changes which metals show the greatest interference. 
