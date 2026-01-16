@@ -12,7 +12,7 @@
 \usepackage{amsmath}
 \usepackage{accents}
 \usepackage[T1]{fontenc}
-\usepackage{stfloats}
+%\usepackage{stfloats}  % Not needed - using top placement instead
 \usepackage{xr}
 \usepackage{afterpage}
 \externaldocument{sensors_metal_supplement}
@@ -229,7 +229,7 @@ Low carbon steel (LC steel), 416 stainless steel (416 SS)
 \end{itemize}
 
 Table \ref{material_prop} summarizes the permeability, conductivity and skin depths of these materials\cite{bowler_frequency-dependence_2006,callister_notitle_2019,mitchell_notitle_2010}.
-Note that while the metal types are nominally the same across the shapes, the materials will not be entirely identical. More important than any small differences in composition, different processing can have significant effects. All three shapes were likely cold worked, which for 304 SS can increase $\mu_r$ to $5$ or more for.
+Note that while the metal types are nominally the same across the shapes, the materials will not be entirely identical. More important than any small differences in composition, different processing can have significant effects. All three shapes were likely cold worked, which for 304 SS can increase $\mu_r$ to $5$ or more.
 
 \begin{table}[!htbp]
 \caption{Relative Permeability, Conductivity, and Skin Effect at 300\,Hz and 10\,kHz  Properties for Metal Samples}
@@ -238,9 +238,9 @@ Note that while the metal types are nominally the same across the shapes, the ma
 \centering
 \begin{tabular}{|l|c|c|c|c|}
 \hline
-\parbox{45pt}{\centering {Metal Type}} & 
-\parbox{25pt}{\centering {$\mu_r$}} & 
-\parbox{45pt}{\centering {$\sigma$ (S/m)}} & 
+\parbox{45pt}{\centering {Metal Type}} &
+\parbox{30pt}{\centering {$\mu_r$ (ratio)}} &
+\parbox{45pt}{\centering {$\sigma$ (S/m)}} &
 \parbox{50pt}{\centering {$\delta_{300 Hz}$ (m)}} &
 \parbox{50pt}{\centering {$\delta_{10\,kHz}$ (m)}}\\
 \hline
@@ -287,20 +287,20 @@ the same length and metal volume as the rods but with an outer diameter of 12.7 
 
 \begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic5.png}}
-\caption{Experiment configuration showing the source and sensor locations and examples of metal positioned at $(20, 0)$. The metal $x$ position is measured from the nearest part, $y$ from the center. Angle is normal to the metal long axis, with (a) $0^{\circ}$ and (b) $90^{\circ}$.}
+\caption{Experiment configuration showing the source and sensor locations and examples of metal positioned at $(20, 0)$ cm. The metal $x$ position is measured from the nearest part, $y$ from the center. Angle is normal to the metal long axis, with (a) $0^{\circ}$ and (b) $90^{\circ}$. All coordinates are in cm.}
 \label{location_example}
 \end{figure}
 
 Source, sensor and metal were positioned in a 100 cm $\times$ 60 cm workspace (Fig. \ref{location_example}). The source and sensor placement varied slightly between the two trackers because of the larger trakSTAR source (see supplement~\ref{supplement:tracker_configuration}), but in both cases the source-sensor distance was 23 cm, with the source at $y=+10$ cm and the sensor at $y= -12$ cm.
 
-We moved each sample along the $x$-axis from $(0, 0)$ to $(100, 0)$ cm, and in $y$ from $(20, -25)$ to $(20, 25)$. The effect of metal was measured by comparison to metal-free measurements recorded at the beginning and end of each move sequence.
+We moved each sample along the $x$-axis from $(0, 0)$ to $(100, 0)$ cm, and in $y$ from $(20, -25)$ to $(20, 25)$ cm. The effect of metal was measured by comparison to metal-free measurements recorded at the beginning and end of each move sequence.
 
 \subsection{Modulation}
 We tested three modulations (Low AC, High AC, and Pulse) using the two trackers (ILEMT and trakSTAR), see \S\ref{subsec:tested_emts}. ILEMT captures both AC modulations simultaneously, while trakSTAR required a separate data collection of all variables.
 
 \section{Results and Discussion}
 
-\begin{table*}[!b]
+\begin{table*}[!t]
 \caption{Experimental Variables, Summary of Hypotheses and Results}
 \label{hypothesis}
 \setlength{\tabcolsep}{3pt}
@@ -452,7 +452,7 @@ As predicted, the similar modulation frequencies of Pulse and Low AC modulation 
 
 From Fig. \ref{small_shape}, and returning to Fig. \ref{HighLow_compare}, we see that while the rods and tubes contained the same volume of metal and were the same length, there were material-dependent differences in the interference each created. Detailed discussion of the quantitative interaction of shape and modulation will be delayed to the discussion of Table \ref{Compare_HighLow_3DGuidance}, but note how the ferromagnetic LC Steel response is little affected by shape, especially at Low AC modulation where permeability dominates. In this case, the amount of metal is the main consideration. Also, for low conductivity 304 SS, the rod interference is clearly \textit{above} the measurement limit, while the tube is undetectable. 
 
-Given the rod diameter of $7.9$ mm and tube wall thickness $1.3$ mm, we had thought we might see this reversal of tube and rod response for more materials (see \S\ref{subsec:metal_types}). For example, the skin depth for 6061 Al at 300\,Hz is $4.73\times10^{-3}$, exceeding the tube wall thickness $>3\times$. Yet the tube still creates much more interference than the rod.
+Given the rod diameter of $7.9$ mm and tube wall thickness $1.3$ mm, we had thought we might see this reversal of tube and rod response for more materials (see \S\ref{subsec:metal_types}). For example, the skin depth for 6061 Al at 300\,Hz is $4.73\times10^{-3}$ m, exceeding the tube wall thickness $>3\times$. Yet the tube still creates much more interference than the rod.
 
 \begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic13.png}}
@@ -464,7 +464,7 @@ Given the rod diameter of $7.9$ mm and tube wall thickness $1.3$ mm, we had thou
 \subsubsection{Sheets}
 \label{subsubsec:sheets_effect}
 
-Our tests on the metal sheets gave the largest surprise we encountered during these experiments. Fig. \ref{sheet_0deg} shows the translation error response to $x$ motion. We did, unsurprisingly, confirm our hypothesis that the much larger and more massive sheet samples would create more interference at any given distance. This is not immediately obvious comparing Fig. \ref{sheet_0deg} to eg. Fig. \ref{small_shape} because sheet motion was started at $20$cm (Fig. \ref{location_example}) since the sheet did not fit between the source and sensor. For 6061 Al at High AC, the Fig. \ref{small_shape} tube has an error of $1\times 10^{-4}$ at $x=20$ cm, vs. $2\times 10^{-2}$ for the sheet in Fig. \ref{sheet_0deg}. Visually, comparing Fig. \ref{sheet_0deg} to Fig. \ref{small_shape}, the response curve appears quite different, with a very uniform drop-off lacking the \textit{flat} and \textit{notch} regions (labeled in Fig. \ref{hollow_high_xmoving}). Starting at $x=20$ cm certainly explains why we do not see the flat region, and the notch seen with rod and tube is likely a highly geometry-specific response of the pose solution algorithm, so this difference is not too surprising. 
+Our tests on the metal sheets gave the largest surprise we encountered during these experiments. Fig. \ref{sheet_0deg} shows the translation error response to $x$ motion. We did, unsurprisingly, confirm our hypothesis that the much larger and more massive sheet samples would create more interference at any given distance. This is not immediately obvious comparing Fig. \ref{sheet_0deg} to eg. Fig. \ref{small_shape} because sheet motion was started at $20$cm (Fig. \ref{location_example}) since the sheet did not fit between the source and sensor. For 6061 Al at High AC, the Fig. \ref{small_shape} tube has an error of $1\times 10^{-4}$ m at $x=20$ cm, vs. $2\times 10^{-2}$ m for the sheet in Fig. \ref{sheet_0deg}. Visually, comparing Fig. \ref{sheet_0deg} to Fig. \ref{small_shape}, the response curve appears quite different, with a very uniform drop-off lacking the \textit{flat} and \textit{notch} regions (labeled in Fig. \ref{hollow_high_xmoving}). Starting at $x=20$ cm certainly explains why we do not see the flat region, and the notch seen with rod and tube is likely a highly geometry-specific response of the pose solution algorithm, so this difference is not too surprising. 
 
 The large surprise in Fig. \ref{sheet_0deg} is relatively low effect of metal type, and also that the ferromagnetic LC Steel shows \textit{lower} interference at Low AC modulation. These effects turn out to interact strongly with rotation, so we will delay further discussion.
 
@@ -502,7 +502,7 @@ Why is the behavior so peculiar for sheets at $0^\circ$ orientation? Referring b
 \label{coupling_fit}
 \end{figure}
 
-Beginning with Fig. \ref{hollow_high_xmoving} we observed that during $x$ motion the curve shapes were similar between metals even when the interference strength varied considerably at any given distance. There was also some difference in shape between the ferromagnetic and non-ferromagnetic metals. From theory \S\ref{nixon_model} we expect an $x^{-6}$ drop-off of interference with distance \eqref{eq:dropoff_power}, at least at far distance, so we have fitted our results to a power law response, Fig. \ref{coupling_fit}. These plots are normalized to equal error at $x=20$. The curves clearly now fall into ferromagnetic and non-ferromagnetic groups.
+Beginning with Fig. \ref{hollow_high_xmoving} we observed that during $x$ motion the curve shapes were similar between metals even when the interference strength varied considerably at any given distance. There was also some difference in shape between the ferromagnetic and non-ferromagnetic metals. From theory \S\ref{nixon_model} we expect an $x^{-6}$ drop-off of interference with distance \eqref{eq:dropoff_power}, at least at far distance, so we have fitted our results to a power law response, Fig. \ref{coupling_fit}. These plots are normalized to equal error at $x=20$ cm. The curves clearly now fall into ferromagnetic and non-ferromagnetic groups.
 
 \begin{table}[!htbp]
 \caption{Curve Fit Exponents (Modulation: High AC, Rotation: 0$^\circ$)}
@@ -549,10 +549,10 @@ We fitted to coupling error because its curves lack the notch seen in the transl
 \begin{tabular}{|l|c|c|c|c|c|c|}
 \hline
 \multicolumn{2}{|c|}{\parbox{75pt}{\centering {Metal Sample}}} & 
-\parbox{60pt}{\centering {High AC}} & 
-\parbox{60pt}{\centering {Low AC}} & 
+\parbox{60pt}{\centering {High AC (m)}} & 
+\parbox{60pt}{\centering {Low AC (m)}} & 
 \parbox{60pt}{\centering {High/Low Ratio}} & 
-\parbox{60pt}{\centering {Pulse (trakSTAR)}} & 
+\parbox{60pt}{\centering {Pulse (trakSTAR) (m)}} & 
 \parbox{60pt}{\centering {Pulse/Low Ratio}} \\
 \hline
 
@@ -616,7 +616,7 @@ Table \ref{Compare_HighLow_3DGuidance} provides a quantitative summary of metal,
 \textbf{Effect of Modulation.} The $\mathrm{high}/\mathrm{low}$ ratio varies widely, but using the robust geometric mean we can generalize that low frequency modulations (300\,Hz and Pulse) reduce typical interference for non-ferromagnetic metals by 12$\times$ compared to High AC (10\,kHz). Conversely, these same low frequencies increase typical interference for ferromagnetic metals by 3$\times$. The similar frequency content of Low AC and Pulse modulations results in nearly identical interference despite using different tracker hardware and signal processing. 
 
 \begin{table}[!htbp]
-\caption{Eddy Current Field Distortion Ratios for Different Metals (loop model)}
+\caption{Eddy Current Loop Model Dimensionless Field Distortion Ratios for Different Metals}
 \label{tab:distortion_ratios}
 \setlength{\tabcolsep}{4pt}
 \centering
@@ -631,7 +631,7 @@ Stainless & $5.05e-06$ & $1.67e-04$ & $32.97$ \\
 \end{tabular}
 \end{table}
 
-Table \ref{tab:distortion_ratios} shows the high/low field distortion ratios predicted by the \S\ref{subsubsec:eddy_current_model} eddy current loop model for different metals. These numbers do capture the trend for reduced high/low ratios in high conductivity metals, but, surprisingly, the high/low ratios for the low conductivity metals sometimes greatly exceed $10\,\mathrm{kHz}/300\,\mathrm{Hz} = 33$, which the loop model cannot explain. Note that the rod ratios marked with "$\dagger$" are likely underestimated because the interference at High AC is already barely measurable. 
+Table \ref{tab:distortion_ratios} shows the high/low field distortion ratios predicted by the \S\ref{subsubsec:eddy_current_model} eddy current loop model for different metals. The distortion ratio is $distortion / source$ field strength measured at the sensor (dimensionless.) These numbers do capture the trend for reduced high/low ratios in high conductivity metals, but, surprisingly, the high/low ratios for the low conductivity metals sometimes greatly exceed $10\,\mathrm{kHz}/300\,\mathrm{Hz} = 33$, which the loop model cannot explain. Note that the rod ratios marked with "$\dagger$" are likely underestimated because the interference at High AC is already barely measurable. 
 
 \textbf{Effect of Metal Type.}
 Interference generally decreases in this order: ferromagnetic metals, high-conductivity non-ferromagnetic metals, and low-conductivity non-ferromagnetic metals, however this varies with metal shape and orientation, with sheets at $0^\circ$ rotation being a strong exception. Ferromagnetic materials experience both eddy current and permeability distortions, but the permeability effect typically dominates. Eddy current strength correlates with conductivity for non-ferromagnetic metals, but (especially with High AC modulation) the difference between Cu and 6061 Al can largely disappear. 

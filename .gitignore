@@ -1,2 +1,19 @@
 /calibration/IEEETransactions_Word/Transactions-instructions-only.pdf
 /calibration/IEEETransactions_Word/Transactions-template-and-instructions-on-how-to-create-your-article.doc
+
+# LaTeX compilation artifacts
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*-eps-converted-to.pdf
+
+# Generated PDFs (keep originals from Overleaf/submissions)
+/metal/EMT metal interference for IEEE Sensors/sensors_metal_main.pdf
+
+# Downloaded package stub
+/metal/EMT metal interference for IEEE Sensors/stfloats.sty
+
+# Temp files
+tmpclaude-*
