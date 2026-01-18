@@ -57,23 +57,23 @@ We thank Reviewer 1 for the constructive feedback and positive assessment of our
 
 ---
 
-### R1.5: Improve table captions
+### R1.5: Improve table captions ✓
 
 **Comment:** Tables' captions should be more detailed and better explain tables' content (e.g., table IV).
 
-**Response:** [TO BE COMPLETED]
+**Response:** We have improved the caption for Table IV (the main quantitative results table) from "Comparison of Modulation Effects vs. Metal and Shape (Translation Error)" to "Quantitative Summary of Metal Interference: Translation Error vs. Modulation, Metal Type, and Shape". This new caption more clearly identifies the table as the central quantitative results and explicitly lists all variables being compared, making it more understandable as a standalone title.
 
-**Location in revised manuscript:** [TBD]
+**Location in revised manuscript:** Table IV caption (line 549)
 
 ---
 
-### R1.6: Fix Fig. 5 labels and units
+### R1.6: Fix Fig. 5 labels and units ✓
 
 **Comment:** Fig. 5: specify that (a) is trakSTAR, (b) is ILEMT. Moreover, add unit of measurement for (20, 0)
 
-**Response:** [TO BE COMPLETED]
+**Response:** We have clarified the Figure 5 caption to address the reviewer's confusion. The (a) and (b) labels in Figure 5 refer to the two rotation angles (0° and 90°), not to different trackers - both configurations shown are for ILEMT. We have updated the caption to explicitly state "Both configurations shown are for ILEMT" and added a reference to supplement Figure S.1, which provides the detailed comparison of ILEMT and trakSTAR tracker configurations. Regarding units, the caption already clearly states "All coordinates are in cm" and the figure includes a labeled "20 cm" arrow for visual scale reference.
 
-**Location in revised manuscript:** [TBD - Figure 5 caption]
+**Location in revised manuscript:** Figure 5 caption (line 294)
 
 ---
 
@@ -97,13 +97,13 @@ We thank Reviewer 1 for the constructive feedback and positive assessment of our
 
 ---
 
-### R1.9: Check supplementary material citation format
+### R1.9: Check supplementary material citation format ✓
 
 **Comment:** I'm not sure whether Supplementary material should be cited in references or not. Please, check it.
 
-**Response:** [TO BE COMPLETED]
+**Response:** We have verified that our supplementary material citation format follows IEEE guidelines. According to IEEE style, supplementary materials should NOT be included in the references section. Instead, they should be cross-referenced inline in the text, which is exactly our current approach. We use `\externaldocument{sensors_metal_supplement}` to enable LaTeX cross-referencing, and reference specific sections using standard `\ref{}` commands (e.g., "see supplement~\ref{supplement:tracker_configuration}"). The supplementary material is uploaded as a separate file alongside the main manuscript. This is the correct and standard IEEE format.
 
-**Location in revised manuscript:** [TBD]
+**Location in revised manuscript:** Lines 18, 298, 445, 542 (inline cross-references to supplement)
 
 ---
 
@@ -131,15 +131,15 @@ We thank Reviewer 2 for their detailed comments. However, we respectfully note t
 - R1.1: Added paper organization paragraph to Introduction ✓
 - R1.2: Revised abstract for clarity and accessibility ✓
 - R1.3: Conducted units audit throughout paper ✓
+- R1.5: Improved Table IV caption ✓
+- R1.6: Figure 5 labels and units (addressed with rationale) ✓
 - R1.8: Reordered Conclusion section paragraphs ✓
+- R1.9: Verified supplementary material citation format is correct ✓
 - Additional: Clarified "out-of-phase distortion" reference in Related Work (line 68) ✓
 
 ### In Progress:
 - R1.4: EMT operating principles background
-- R1.5: Table captions improvement
-- R1.6: Figure 5 labels and units
 - R1.7: Section V.B experimental setup clarification
-- R1.9: Supplementary material citation check
 - R1.10: Updated references for Related Work
 
 ### Pending:

@@ -69,9 +69,9 @@ The remainder of this paper is organized as follows. Section II reviews related 
 
 \section{Related Work}
 
-Higher conductivity generally leads to greater interference across different metal materials, though steel samples showed opposite results due to combined effects of permeability and eddy current \cite{stevens_minimizing_2010, lascalza_effect_2003}. Measurements with pulsed DC trackers found that steel samples produced greater error than aluminum at sampling rates between 20-140\,Hz, though aluminum caused more distortion at the highest sampling rate of 140\,Hz, as higher sampling rates provide less time for eddy current decay \cite{lascalza_effect_2003}. This confirms that eddy current distortion affects both ferromagnetic and non-ferromagnetic metals \cite{cavaliere_enhancing_2023}.
+Comprehensive reviews of electromagnetic tracking have identified field distortion from metallic objects as a primary limitation, with clinical studies showing tracking errors up to 7.6\,mm in disturbed environments \cite{franz_electromagnetic_2014}.
 
-Beyond material properties, studies in orthopedic tracking applications revealed that larger size and mass significantly increase distortion, while greater distance between metals and tracker components reduces interference \cite{stevens_minimizing_2010}. 
+Empirical characterization studies have investigated how material properties, geometry, and positioning affect interference magnitude. Higher conductivity generally leads to greater interference across different metal materials, though steel samples showed opposite results due to combined effects of permeability and eddy current \cite{stevens_minimizing_2010, lascalza_effect_2003}. Measurements with pulsed DC trackers found that steel samples produced greater error than aluminum at sampling rates between 20-140\,Hz, though aluminum caused more distortion at the highest sampling rate of 140\,Hz, as higher sampling rates provide less time for eddy current decay \cite{lascalza_effect_2003}. This confirms that eddy current distortion affects both ferromagnetic and non-ferromagnetic metals \cite{cavaliere_enhancing_2023}. Beyond material properties, studies in orthopedic tracking applications revealed that larger size and mass significantly increase distortion, while greater distance between metals and tracker components reduces interference \cite{stevens_minimizing_2010}.
 
 \begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic1.png}}
@@ -80,6 +80,8 @@ Beyond material properties, studies in orthopedic tracking applications revealed
 \end{figure}
 
 A dipole model predicting an inverse sixth power law for distance attenuation showed inconsistent results with large samples, while testing with sheet and cube samples demonstrated distortion increases proportionally to the sample width from the sensor perspective \cite{nixon_effects_1998}. Greatest interference occurs when metal is oriented parallel to the source-sensor plane, as metal orientation affects magnetic field blocking between source and sensor, as illustrated in Fig. \ref{magnetic_field} \cite{nixon_effects_1998}. Fully conductive closed loops create particularly strong interference by forming complete current paths within the magnetic field's projected area \cite{nixon_effects_1998}.
+
+Recent work has focused on compensation strategies to mitigate these effects in clinical settings. Simultaneous localization and mapping approaches enable real-time distortion correction without preoperative calibration, reducing position errors by 67\% and orientation errors by 64\% through redundant sensor measurements \cite{sadjadi_simultaneous_2016}. Analytical magnetic field modeling from scattered calibration data has achieved sub-millimeter accuracy with compensation for clinical equipment such as fluoroscopy C-arms \cite{cavaliere_magnetic_2023}.
 
 \section{EMT Operating Principles}
 An EMT measures the position and orientation (pose) of a sensor relative to a magnetic source, providing six degrees of freedom (6 DOF) tracking. Since a single field measurement cannot fully determine the pose, EMTs utilize multiple source and sensor elements. In the systems we tested, the source generates three distinct magnetic fields, and the sensor measures these fields along three independent axes.
@@ -291,7 +293,7 @@ the same length and metal volume as the rods but with an outer diameter of 12.7 
 
 \begin{figure}[!htbp]
 \centerline{\includegraphics[width=\columnwidth]{chaic5.png}}
-\caption{Experiment configuration showing the source and sensor locations and examples of metal positioned at $(20, 0)$ cm. The metal $x$ position is measured from the nearest part, $y$ from the center. Angle is normal to the metal long axis, with (a) $0^{\circ}$ and (b) $90^{\circ}$. All coordinates are in cm.}
+\caption{Experiment configuration showing the source and sensor locations and examples of metal positioned at $(20, 0)$ cm. The metal $x$ position is measured from the nearest part, $y$ from the center. Angle is normal to the metal long axis, with (a) $0^{\circ}$ and (b) $90^{\circ}$. Both configurations shown are for ILEMT; see supplement Fig. S.1 for comparison of ILEMT and trakSTAR tracker configurations. All coordinates are in cm.}
 \label{location_example}
 \end{figure}
 
@@ -546,7 +548,7 @@ We fitted to coupling error because its curves lack the notch seen in the transl
 \section{Summary}
 
 \begin{table*}[!htbp]
-\caption{Comparison of Modulation Effects vs. Metal and Shape (Translation Error)}
+\caption{Quantitative Summary of Metal Interference: Translation Error vs. Modulation, Metal Type, and Shape}
 \label{Compare_HighLow_3DGuidance}
 \setlength{\tabcolsep}{4pt}
 \centering

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "metal/Response to reviewers.md",
+                "file": "metal/response_notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Response to reviewers"
+              "title": "response_notes"
             }
           }
         ],
@@ -228,8 +228,8 @@
           }
         ],
         "direction": "vertical",
-        "x": 225,
-        "y": 59,
+        "x": 182,
+        "y": 24,
         "width": 849,
         "height": 1034,
         "maximize": false,
@@ -237,21 +237,23 @@
       }
     ]
   },
-  "active": "aee5b5ed0d3f4247",
+  "active": "be302d6da183e600",
   "lastOpenFiles": [
+    "metal/related_work_reorganization_proposal.md",
+    "final_recommendations.md",
     "metal/Response to reviewers.md",
-    "tmpclaude-7524-cwd",
-    "metal/response_notes.md",
     "metal/Reviewer comments.md",
-    "metal/EMT metal interference for IEEE Sensors/tmpclaude-c59f-cwd",
-    "metal/EMT metal interference for IEEE Sensors/tmpclaude-fad5-cwd",
-    "metal/EMT metal interference for IEEE Sensors/tmpclaude-3cc6-cwd",
-    "metal/EMT metal interference for IEEE Sensors/sensors_metal_main.tex.tmp.15780.1768586457548",
-    "metal/EMT metal interference for IEEE Sensors/tmpclaude-5969-cwd",
-    "metal/EMT metal interference for IEEE Sensors/tmpclaude-2b55-cwd",
-    "tmpclaude-366e-cwd",
-    "metal/tmpclaude-f62e-cwd",
-    "tmpclaude-b620-cwd",
+    "metal/refs/Simultaneous_Electromagnetic_Tracking_and_Calibration_for_Dynamic_Field_Distortion_Compensation.pdf",
+    "metal/refs/Magnetic_Model_Calibration_and_Distortion_Compensation_for_Electromagnetic_Tracking_in_a_Clinical_Environment.pdf",
+    "metal/refs/Electromagnetic_Tracking_in_MedicineA_Review_of_Technology_Validation_and_Applications.pdf",
+    "metal/refs",
+    "metal/New folder",
+    "tmpclaude-1702-cwd",
+    "tmpclaude-10c7-cwd",
+    "metal/EMT metal interference for IEEE Sensors/tmpclaude-1f00-cwd",
+    "metal/EMT metal interference for IEEE Sensors/tmpclaude-c370-cwd",
+    "metal/EMT metal interference for IEEE Sensors/tmpclaude-4ef3-cwd",
+    "metal/response_notes.md",
     "CLAUDE.MD",
     "CLAUDE.md"
   ]
